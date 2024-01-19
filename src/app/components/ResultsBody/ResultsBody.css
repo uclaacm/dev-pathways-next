@@ -1,0 +1,16 @@
+.results-container{
+    width: 70%;
+    height: 100%;
+    margin: 2%;
+    text-align: left;
+}
+h2{
+    font-size: 36px;
+}
+
+.otherSource {
+    font-size: 13px;
+    padding: 0px 5px 0px 5px;
+}
+
+

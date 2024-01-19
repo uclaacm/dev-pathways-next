@@ -1,0 +1,26 @@
+.list-head {
+    display: block;
+    font-weight: medium;
+    font-size: 18;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.category-list {
+    text-align: start;
+}
+
+.category-list a {
+    display: block;
+    color: #1e6cff;
+    text-decoration: none;
+    transition: .15s;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* font-size: 25;  */
+}
+
+.category-list a:hover {
+    font-weight: 500;
+}

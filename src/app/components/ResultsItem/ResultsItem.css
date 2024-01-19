@@ -1,0 +1,51 @@
+
+.result {
+    border: 2px solid #00000015;
+    border-radius: 15px;
+    margin: 30px 2%;
+    padding: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    min-width: 300px;
+}
+
+.result a:link {
+    color: #1E6CFF;
+    text-decoration: none;
+}
+
+.result a:visited {
+    color: #1E6CFF;
+}
+
+.result a:hover {
+    text-decoration: underline;
+}
+
+.result-body {
+    flex-direction: column;
+}
+
+.result-icon {
+    width: 100px;
+    padding-right: 15px;
+}
+
+.titleLink {
+    font-size: 20px;
+}
+
+.resource-type-icon {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.description {
+    font-size: 17px;
+    margin: 10px 0px;
+    max-width: 1000px;
+}
+
+.results-item-footer {
+    font-size: 12px;
+}
