@@ -1,11 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 import './TeamCard.css';
 
 //passing index as key is okay since list is static, would need to use a unique id if list is not static
 const TeamCard = props => {
     return (
         <div className="card">
-            <img src={props.team.logotype} alt="team logotype" />
+            <Image src={props.team.logotype} alt="team logotype" />
             <h3>Technologies</h3>
             <ul>
                 {props.team.technologies.map((tech, index) =>
