@@ -14,12 +14,10 @@ const SearchBar = props => {
         <div className="searchbar">
             <div className="search-icon">
                 <Clickable onClick={onSubmit}>
-                    {/* <img src={search} alt="search icon" /> */}
-                    <Image src={search} alt="search icon" width={100} height={100}/>
+                    <Image src={search} alt="search icon"/>
                 </Clickable>
             </div>
-            {/* <img src={line} alt="line" /> */}
-            <Image src={line} alt="line" width={100} height={100}/>
+            <Image src={line} alt="line" />
             <div>
                 {showPlaceholder && !value && <label for="search">
                     What do you want to learn? <span id="animation"><TypingAnimation words={["html/css", "javascript", "react"]} /></span>

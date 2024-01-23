@@ -1,17 +1,17 @@
 import React from 'react';
 import './PathwaysSection.css';
 import SolidButton from '../SolidButton/SolidButton';
-import pathway1 from 'src/app/components/PathwaysSection/pathway1.svg';
-// import { useNavigate } from 'react-router-dom';
+import pathway1 from './pathway1.svg';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const PathwaysSection = () => {
-    // const navigate = useNavigate();
-
+    const router = useRouter();
     return (
         <div className="pathway-section">
             <h2>Your Pathway</h2>
             <div className="pathway-container">
-                <img src={pathway1} alt="" />
+            <Image src={pathway1} alt="" />
                 <div className="pathway-info">
                     Want to learn a technology but don&apos;t know where to start? Dev Pathways will guide you through it! Simply answer a few questions and we&apos;ll take care of the rest.
 
@@ -21,7 +21,7 @@ const PathwaysSection = () => {
                     <SolidButton
                         className="gen-pathway-button"
                         text="Generate"
-                        onClick={() => navigate("/quiz")}
+                        onClick={() => router.push("/quiz")}
                     />
                 </div>
             </div>
