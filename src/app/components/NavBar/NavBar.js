@@ -1,13 +1,14 @@
 import React from 'react';
 import './NavBar.css';
-import logo from './acm_logo.svg';
+import logo from './acm_logo.svg'
 import IconButton from '../IconButton/IconButton';
 import ResourceButton from '../ResourceButton/ResourceButton';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
+// import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
-    const navigate = useNavigate();
-
+    // const navigate = useNavigate();
+    const router = useRouter()
     return (
         <div>
             <div className="nav-container">
@@ -16,12 +17,12 @@ const NavBar = () => {
                         text="Dev Pathways"
                         icon={logo}
                         alt="acm logo"
-                        onClick={() => navigate("/")} />
+                        onClick={() => router.push("/")} />
                 </div>
                 <div className="element-container resource-btn">
                     <ResourceButton
                         text="Resources"
-                        onClick={() => navigate("/archive")}
+                        onClick={() => router.push("/archive")}
                     />
                 </div>
             </div>
