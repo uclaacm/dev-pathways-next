@@ -10,7 +10,6 @@ const NavBar = () => {
     // const navigate = useNavigate();
     const router = useRouter()
     return (
-        <div>
             <div className="nav-container">
                 <div className="element-container">
                     <IconButton
@@ -26,7 +25,7 @@ const NavBar = () => {
                     />
                 </div>
             </div>
-        </div>
+
     );
 }
 

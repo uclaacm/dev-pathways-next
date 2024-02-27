@@ -19,7 +19,7 @@ const SearchBar = props => {
             </div>
             <Image src={line} alt="line" />
             <div>
-                {showPlaceholder && !value && <label for="search">
+                {showPlaceholder && !value && <label htmlFor="search">
                     What do you want to learn? <span id="animation"><TypingAnimation words={["html/css", "javascript", "react"]} /></span>
                 </label>}
                 <input

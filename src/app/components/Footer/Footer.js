@@ -4,6 +4,7 @@ import github from './github.svg';
 import instagram from './instagram.svg';
 import medium from './medium.svg';
 import './Footer.css';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -12,16 +13,16 @@ const Footer = () => {
                 <span id="social-media-header">Find us on Social Media!</span>
                 <div className="social-media-icons-container">
                     <a href="https://www.instagram.com/acm.ucla/" target="_blank" rel="noreferrer noopener">
-                        <img src={instagram} alt="ACM instagram link" className="social-media-icon"/>
+                        <Image src={instagram} alt="ACM instagram link" className="social-media-icon" height={32} width={32}/>
                     </a>
                     <a href="https://www.facebook.com/uclaacm" target="_blank" rel="noreferrer noopener">
-                        <img src={facebook} alt="ACM facebook link" className="social-media-icon"/>
+                        <Image src={facebook} alt="ACM facebook link" className="social-media-icon"/>
                     </a>
                     <a href="https://github.com/uclaacm/dev-pathways" target="_blank" rel="noreferrer noopener">
-                        <img src={github} alt="Dev Pathways Github link" className="social-media-icon"/>
+                        <Image src={github} alt="Dev Pathways Github link" className="social-media-icon"/>
                     </a>
                     <a href="https://medium.com/techatucla" target="_blank" rel="noreferrer noopener">
-                        <img src={medium} alt="ACM medium link" className="social-media-icon"/>
+                        <Image src={medium} alt="ACM medium link" className="social-media-icon"/>
                     </a>
                 </div>
             </div>
