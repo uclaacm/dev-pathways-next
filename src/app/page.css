@@ -1,10 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .Home {
   text-align: center;
   overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 h1 {
