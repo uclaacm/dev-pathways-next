@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import styles from './page.module.css'
+import './page.css'
 
 import React from 'react';
 import SearchSection from './components/SearchSection/SearchSection';
@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 
 export default function Home(){
     return (
-        <div>
+        <>
             <NavBar />
             <div className="Home">
                 <SearchSection/>
@@ -20,6 +20,6 @@ export default function Home(){
                 <PathwaysSection/>
             </div>
             <Footer />
-        </div>
+        </>
     );
 }
