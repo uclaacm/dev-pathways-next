@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+
 import React from "react";
 import SearchSection from "./components/SearchSection/SearchSection";
 import TeamSection from "./components/TeamSection/TeamSection";
@@ -22,4 +23,5 @@ export default function Home() {
       <Footer></Footer>
     </div>
   );
+
 }
