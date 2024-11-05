@@ -5,7 +5,7 @@ import Clickable from '../Clickable/Clickable';
 const TeamButton = props => {
     return (
         <Clickable onClick={props.onClick}>
-            <img className="team-button" src={props.icon} alt={props.alt}/>
+            <img className="team-button" src={props.icon.src} alt={props.alt}/>
         </Clickable>
     );
 }

@@ -1,0 +1,48 @@
+.panel-header {
+    display: flex;
+    align-items: center;
+}
+
+.summary-name {
+    font-size: 1.2rem;
+    line-height: 1.0;
+    font-weight: 500;
+}
+
+/* individual topic links */
+.resources-container {
+    /* border: 1px solid black; */
+    /* box-shadow: 2px 2px 10px 0 #aaa; */
+    padding: 1rem;
+}
+
+.resource {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 10px 0 #aaa;
+    border-radius: 5px;
+}
+
+.resource-name {
+    
+}
+
+/* .summary-icon {
+    display: flex;
+    align-items: center;
+    padding: 0 0.25rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+    transition: 0.1s;
+}
+
+.summary-icon:hover {
+    color: lightblue;
+    transform: scale(1.1);
+}
+
+.summary-icon.visited {
+    color: black;
+    background-color: black;
+} */
