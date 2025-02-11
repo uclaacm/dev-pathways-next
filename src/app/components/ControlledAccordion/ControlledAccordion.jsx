@@ -4,15 +4,15 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import ArticleIcon from '@mui/icons-material/Article';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import { Link } from '@mui/material';
 
-import './ControlledAccordion.css'
+import './ControlledAccordion.css';
 
 export default function ControlledAccordion(props) {
     const [expanded, setExpanded] = React.useState(false);
     let {topicName, resourceList} = props;
-    console.log('break')
-    // console.log(topicName)
-    console.log(JSON.stringify(resourceList, null, 2));
 
     if (!resourceList) return;
   
@@ -41,7 +41,7 @@ export default function ControlledAccordion(props) {
     };
 
     return (
-        <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+        <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{ boxShadow: "none" }}>
             <AccordionSummary 
                 className="panel-header"
                 id="panel-header" 
@@ -57,13 +57,25 @@ export default function ControlledAccordion(props) {
                 <div className="resources-container">
                     { 
                         resourceList.map((resource) => (
-                            <div className="resource">
-                                <h4 className="resource-name">{ resource.name }</h4>
-                                <h6>Difficulty: {renderStars(resource.difficulty)}</h6>
-                                <a href={resource.video}>Video</a><br></br>
-                                {/* <a href="#">article link</a> */}
+                            <a className="resource">
+                                <div className="resource-header">
+                                    <div className="resource-header-left">
+                                        <h4 className="resource-name">{ resource.name }</h4>
+                                        <h6 className="resource-difficulty">Difficulty:&nbsp;&nbsp;{renderStars(resource.difficulty)}</h6>
+                                    </div>
+                                    <div className="resource-icons">
+                                        { resource.article && 
+                                            <Link href={resource.article} target="_blank" rel="noopener">
+                                                <ArticleIcon className="article-icon"/>
+                                            </Link>
+                                        }
+                                        <Link href={resource.video} target="_blank" rel="noopener">
+                                            <YouTubeIcon className="video-icon"/>
+                                        </Link>
+                                    </div>
+                                </div>
                                 <p className="description">{ resource.description }</p>
-                            </div>
+                            </a>
                         ))
                     }
                 </div>

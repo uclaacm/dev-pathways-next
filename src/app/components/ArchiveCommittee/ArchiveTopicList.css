@@ -1,3 +1,19 @@
 .archive-committee-content {
     width: 80%;
+    margin: 0.5rem 0;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.MuiPaper-root {
+    transition: 0.3s;
+}
+
+.MuiButtonBase-root:hover {
+    background-color: #eee;
+}
+
+.MuiAccordionSummary-content {
+    margin: 20px 0;
 }

@@ -12,10 +12,12 @@ const SearchSection = props => {
     }
     return (
         <div className="search-container">
-            <h1>Dev Pathways</h1>
-            <SearchandSuggested 
-            searchFunction ={search}
-            />
+            <div className="search-container-inner"> 
+                <h1>Dev Pathways</h1>
+                <SearchandSuggested 
+                searchFunction ={search}
+                />
+            </div>
         </div>
     );
 }

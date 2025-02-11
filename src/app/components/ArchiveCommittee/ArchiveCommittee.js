@@ -20,8 +20,13 @@ const ArchiveCommittee = (props) => {
             <h2 className="committee-name">
                 ACM {committeeName.charAt(0).toUpperCase() + committeeName.slice(1)}
             </h2>
-            {filteredList.map((item) => (item.links[0] &&
-                    <ArchiveTopicList topicName={item.category} resourceList={item.links} />
+            {filteredList.every(item => !item.links[0]) ? (
+                <h4 className='no-resource-msg'>No past resources available at this time.</h4>
+            ) : (
+                filteredList.map((item) => 
+                    item.links[0] && (
+                        <ArchiveTopicList topicName={item.category} resourceList={item.links} />
+                    )
                 )
             )}
         </div>

@@ -25,18 +25,6 @@ const Archive = (props: any) => {
                 }}
             />
             <ArchiveBody />
-            {/* <div className="quarters"> */}
-                {/* <div className="quarter">
-                    <div className="quarter-title">Spring 2023</div>
-                    <div className="quarter-content">
-                        <ControlledAccordion
-                            title="Hackschool"
-                            titleIcon={<LinkIcon />}
-                            titleIconLink="www.google.com"
-                        ></ControlledAccordion>
-                    </div>
-                </div> */}
-            {/* </div> */}
         </>
     )
 }
