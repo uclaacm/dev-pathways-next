@@ -4,7 +4,7 @@ import './PageHeader.css';
 
 const PageHeader = ({header, subheader, img, imgStyle}) => {
     const backgroundStyle = {
-        backgroundImage: `url(${img})`,
+        backgroundImage: `url(${img.src})`,
         ...imgStyle
     }
 

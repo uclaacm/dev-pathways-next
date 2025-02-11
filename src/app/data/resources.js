@@ -156,7 +156,7 @@ const resources = [
                 name: "Learning Labs | Intro to JavaScript",
                 video: "https://www.youtube.com/watch?v=wTMeQSq2PJg",
                 article: "https://github.com/uclaacm/learning-lab-crash-course-su20/tree/master/03-intro-js",
-                source: "Teach LA",
+                source: "W",
                 icon: teachla,
                 description: "This lecture (and set of notes) is supposed to be a primer into Javascript for developers with experience in another imperative language (e.g. C++, Java, Python, etc.). By the end of this lesson, you'll know enough Javascript to make simple interactions on a website, and more importantly, have a strong-enough of a foundation to start exploring it on your own, if you'd like.",
                 difficulty: "Beginner",
